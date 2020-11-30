@@ -15,7 +15,7 @@ Function loadConfig() as Object
 {
     Title: "NEGAH TV"
     streamFormat: "mp4"
-    Stream: "https://iptv.negahtv.com/negahtv/playlist.m3u8"
+    Stream: "http://iptv.negahtv.com/negahtv/playlist.m3u8"
 }
 
 
