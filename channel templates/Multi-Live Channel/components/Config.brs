@@ -15,6 +15,7 @@ Function loadConfig() as Object
 {
     Title: "NEGAH TV"
     streamFormat: "mp4"
+    Logo: "pkg:/images/Logo PNG.png"
     Stream: "http://iptv.negahtv.com/negahtv/playlist.m3u8"
 }
 
