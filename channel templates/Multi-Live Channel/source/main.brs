@@ -4,12 +4,7 @@
 Library "Roku_Ads.brs"
 
 sub Main()
-   Screen = CreateObject("roSGScreen")
-Scene = Screen.CreateScene(componentName)
-Screen.Show()
-Scene.signalBeacon("AppLaunchComplete")
-
-   screen = CreateObject("roSGScreen")
+    screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
     screen.setMessagePort(m.port)
     
@@ -56,6 +51,11 @@ Scene.signalBeacon("AppLaunchComplete")
             if msg.isScreenClosed() then return
        end if
     end while
+    
+     Screen = CreateObject("roSGScreen")
+Scene = Screen.CreateScene(componentName)
+Screen.Show()
+Scene.signalBeacon("AppLaunchComplete")
 end sub
 
 Sub RAF()
