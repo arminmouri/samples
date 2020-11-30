@@ -4,7 +4,12 @@
 Library "Roku_Ads.brs"
 
 sub Main()
-    screen = CreateObject("roSGScreen")
+   Screen = CreateObject("roSGScreen")
+Scene = Screen.CreateScene(componentName)
+Screen.Show()
+Scene.signalBeacon("AppLaunchComplete")
+
+   screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
     screen.setMessagePort(m.port)
     
